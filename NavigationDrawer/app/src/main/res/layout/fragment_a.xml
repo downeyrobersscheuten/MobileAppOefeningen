@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="10dp"
+android:id="@+id/fragment_a"
+tools:context="be.howest.nmct.NavigationDrawer.FragmentA">
+
+<!-- TODO: Update blank fragment layout -->
+<TextView
+    style="?android:attr/listSeparatorTextViewStyle"
+    android:id="@+id/textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Oefening kwadraat"
+    android:textAlignment="center"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+<TextView
+    android:id="@+id/textview_exercise"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="@string/opdracht_bewerking" />
+
+<android.support.design.widget.TextInputLayout
+    android:id="@+id/mass_text_input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="11dp">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editTextAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/your_result"
+        android:inputType="numberDecimal" />
+
+</android.support.design.widget.TextInputLayout>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/controleer"
+    android:layout_marginTop="11dp"
+    android:id="@+id/controleer"/>
+
+<TextView
+    android:id="@+id/textviewfeedback"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/feedback"
+    android:layout_marginTop="11dp"
+    android:textAlignment="center"
+    android:visibility="invisible"
+    />
+
+</LinearLayout>

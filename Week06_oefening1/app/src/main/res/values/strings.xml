@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Rekenen</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="opdracht_bewerking">Wat is het kwadraat van </string>
+    <string name="your_result">Tik hier jouw antwoord in</string>
+    <string name="controleer">Controleer</string>
+    <string name="feedback">feedback antwoord</string>
+    <string name="aantal_juiste_antwoorden">Aantal juiste antwoorden: </string>
+    <string name="aantal_foutieve_antwoorden">Aantal foutieve antwoorden: </string>
+</resources>

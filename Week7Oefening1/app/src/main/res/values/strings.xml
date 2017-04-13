@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Horoscoop</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="geef_uw_naam">Uw naam</string>
+    <string name="geef_uw_voornaam">Uw voornaam</string>
+    <string name="selecteer_jaar">Selecteer uw geboortejaar</string>
+    <string name="selecteer_horoscoop">Selecteer uw horoscoop</string>
+    <string name="title_activity_select_leeftijd">SelectLeeftijdActivity</string>
+    <string name="uw_gegevens">Uw gegevens:</string>
+    <string name="uw_geboortejaar">Geboortejaar: </string>
+    <string name="horoscoop">horoscoop</string>
+    <string name="naam_horoscoop">naam</string>
+    <string name="title_activity_horoscoop">HoroscoopActivity</string>
+    <string name="toon_info">Info&#8230;</string>
+    <string name="toon_afbeelding_horoscoop">Afbeelding Horoscoop</string>
+</resources>

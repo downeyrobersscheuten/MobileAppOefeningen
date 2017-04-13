@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_bmi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="be.howest.nmct.bmicalculator.BmiActivity"
+    tools:showIn="@layout/activity_bmi">
+        <TextView android:id="@+id/headerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/header"
+            android:textAlignment="center"
+            android:textSize="14pt"
+            android:textColor="@color/colorPrimary"/>
+
+    <!-- Start inputs-->
+        <!-- height info-->
+        <EditText android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerText"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:hint="@string/height"/>
+
+        <!-- Weight info-->
+        <EditText android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:layout_below="@+id/height"
+            android:hint="@string/weight"/>
+
+        <Button android:id="@+id/btnGo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_below="@+id/weight"
+            android:text="@string/update"
+            android:textColor="@color/text"/>
+
+        <TextView android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGo"
+            android:layout_marginTop="19dp"
+            android:text="@string/info"/>
+
+        <!-- Foto info-->
+        <ImageView android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/info"
+            android:src="@drawable/silhouette_2"
+            android:layout_below="@+id/text"/>
+
+
+    <!-- Start van de text info -->
+        <!-- Index info-->
+        <TextView android:id="@+id/lblIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/index"
+            android:layout_below="@+id/text"
+            android:layout_marginStart="41dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/image"/>
+
+        <TextView android:id="@+id/index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error"
+            android:layout_below="@+id/text"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/lblIndex"/>
+
+        <!-- Category info-->
+        <TextView android:id="@+id/lblCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Category"
+            android:layout_below="@+id/lblIndex"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/image"/>
+
+        <TextView android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error"
+            android:layout_below="@+id/lblIndex"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/lblCategory"/>
+
+
+
+        <!--<EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your height here"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="49dp"
+            android:id="@+id/height"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="6dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your mass here"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+
+            android:id="@+id/Mass"
+            android:layout_marginTop="32dp"
+            android:layout_above="@+id/textView2"
+            android:layout_alignEnd="@+id/height" />
+
+
+        <TextView
+            android:text="YOUR INPUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginTop="65dp"
+            android:contextClickable="false"
+            android:freezesText="true"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="23pt"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <Button android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bereken BMI"
+            android:onClick="berekenBMI"
+
+            android:layout_below="@+id/Mass"
+            android:layout_alignParentStart="true" /> -->
+
+    </RelativeLayout>
+
+

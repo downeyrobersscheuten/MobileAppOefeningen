@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:screenOrientation="landscape"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header"
+        android:textAlignment="center"
+        android:textSize="14pt"
+        android:textColor="@color/colorPrimary"/>
+
+    <!-- Start inputs-->
+    <!-- height info-->
+    <EditText android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerText"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:hint="@string/height"/>
+
+    <!-- Weight info-->
+    <EditText android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textAlignment="center"
+        android:layout_below="@+id/height"
+        android:hint="@string/weight"/>
+
+    <Button android:id="@+id/btnGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/weight"
+        android:text="@string/update"
+        android:textColor="@color/text"/>
+
+    <TextView android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGo"
+        android:layout_marginTop="19dp"
+        android:text="@string/info"/>
+
+    <!-- Foto info-->
+    <ImageView android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/info"
+        android:src="@drawable/silhouette_2"
+        android:layout_below="@+id/text"/>
+
+
+    <!-- Start van de text info -->
+    <!-- Index info-->
+    <TextView android:id="@+id/lblIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/index"
+        android:layout_below="@+id/text"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/image"/>
+
+    <TextView android:id="@+id/index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error"
+        android:layout_below="@+id/text"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/lblIndex"/>
+
+    <!-- Category info-->
+    <TextView android:id="@+id/lblCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Category"
+        android:layout_below="@+id/lblIndex"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/image"/>
+
+    <TextView android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error"
+        android:layout_below="@+id/lblIndex"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/lblCategory"/>
+</RelativeLayout>
